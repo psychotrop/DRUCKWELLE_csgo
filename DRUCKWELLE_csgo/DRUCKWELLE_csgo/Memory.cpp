@@ -13,3 +13,13 @@ void Memory::init()
 {
 
 }
+
+DWORD Memory::getClientDLL()
+{
+	return dwClientDLL;
+}
+
+DWORD Memory::getEngineDLL()
+{
+	return dwEngineDLL;
+}

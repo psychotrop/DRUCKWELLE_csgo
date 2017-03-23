@@ -4,19 +4,15 @@
 
 using namespace std;
 
-Memory mem;
+
+bool bRun = true;
 
 int main()
 {	
-	int i = 0;
+	while (bRun)
+	{
 
-	cout << i << endl;
-
-	mem.WriteMemory<int>(0, i);
-
-	cout << i << endl;
-
-	system("pause");
+	}
 
 	return 0;
 }
