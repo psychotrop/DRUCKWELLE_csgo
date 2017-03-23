@@ -1,7 +1,6 @@
 #pragma once
 
-#include <Windows.h>
-#include <TlHelp32.h>
+#include "Include.h"
 
 struct Vector
 {
@@ -11,19 +10,20 @@ struct Vector
 struct Player_t
 {
 private:
+	DWORD			m_dwBase;
 	unsigned int	m_iHealth;
 	unsigned int	m_iTeam;
 	Vector			m_vPos;
 
-	unsigned int	readHealth();
-	unsigned int	readTeam();
-	Vector			readPosition();
+	void			readBase(int iIndex);
+	void			readHealth();
+	void 			readTeam();
+	void			readPosition();
 
 public:
 	unsigned int	getHealth();
-
 	unsigned int	getTeam();
+	Vector			getPos();
 
 	void			readInfo();
 };
-
