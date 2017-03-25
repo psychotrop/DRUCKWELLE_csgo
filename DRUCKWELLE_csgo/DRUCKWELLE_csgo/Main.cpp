@@ -2,6 +2,7 @@
 
 #include "Memory.h"
 
+// external
 Memory mem; 
 
 using namespace std;
