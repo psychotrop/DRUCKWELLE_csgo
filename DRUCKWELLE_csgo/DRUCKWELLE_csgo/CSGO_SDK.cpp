@@ -14,3 +14,8 @@ void Player_t::readPosition()
 {
 	mem.ReadMemory<Vector>(m_dwBase + Offsets::Netvars::m_vecOrigin, &m_vPos);
 }
+
+void Player_t::readTeam()
+{
+	mem.ReadMemory<unsigned int>(m_dwBase + Offsets::Netvars::m_iTeamNum, &m_iTeam);
+}
