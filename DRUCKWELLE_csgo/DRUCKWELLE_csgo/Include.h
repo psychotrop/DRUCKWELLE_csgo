@@ -5,9 +5,9 @@
 #include <TlHelp32.h>
 
 using namespace std;
+#include "Memory.h"
+//Memory mem;
 
 #include "CSGO_SDK.h"
-#include "Memory.h"
 #include "Offsets.h"
 
-Memory mem;

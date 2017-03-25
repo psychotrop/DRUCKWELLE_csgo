@@ -2,6 +2,8 @@
 
 #include "Memory.h"
 
+Memory mem; 
+
 using namespace std;
 
 
