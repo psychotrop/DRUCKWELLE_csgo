@@ -20,7 +20,7 @@ public:
 	template <class Type>
 	bool ReadMemory(DWORD dwAddress, Type* pBuffer)
 	{
-		return ReadProcessMemory(m_hProcess, (void*)dwAddress, pBuffer, sizeof(Type, NULL));
+		return ReadProcessMemory(m_hProcess, (void*)dwAddress, pBuffer, sizeof(Type), NULL);
 	}
 
 	template <class Type>
@@ -32,5 +32,4 @@ public:
 	DWORD getClientDLL();
 	DWORD getEngineDLL();
 };
-
 extern Memory mem;
