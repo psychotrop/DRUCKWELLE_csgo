@@ -13,3 +13,9 @@ using namespace std;
 #include "CSGO_SDK.h"
 #include "Offsets.h"
 
+// Features
+#include "Glow.h"
+
+
+// global vars
+extern bool g_bRun;

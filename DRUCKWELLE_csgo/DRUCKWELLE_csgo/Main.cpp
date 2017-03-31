@@ -3,18 +3,24 @@
 #include "Memory.h"
 
 // external
-Memory mem; 
+Memory mem;
+Glow glow;
+
+bool g_bRun = true;
 
 using namespace std;
 
 
-bool bRun = true;
+DWORD git_gud;
+
 
 int main()
 {	
-	while (bRun)
+	mem.init();
+	
+	while (g_bRun)
 	{
-
+		glow.run();
 	}
 
 	return 0;

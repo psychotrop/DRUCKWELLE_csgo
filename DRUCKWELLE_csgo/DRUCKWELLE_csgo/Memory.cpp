@@ -11,7 +11,13 @@ Memory::~Memory()
 
 void Memory::init()
 {
-	HWND hwndCSGO = FindWindow(0, "Counter-Strike: Global Offensive");
+	HWND hwndCSGO;
+
+	do
+	{
+		hwndCSGO = FindWindow(0, "Counter-Strike: Global Offensive");
+	} while (!hwndCSGO);
+	
 
 	GetWindowThreadProcessId(hwndCSGO, (LPDWORD)&m_iProcessID);
 
