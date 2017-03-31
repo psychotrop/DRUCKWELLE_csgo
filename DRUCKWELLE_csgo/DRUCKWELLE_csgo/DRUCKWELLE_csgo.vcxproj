@@ -112,11 +112,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CSGO_SDK.cpp" />
+    <ClCompile Include="Glow.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Memory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSGO_SDK.h" />
+    <ClInclude Include="Glow.h" />
     <ClInclude Include="Include.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="Offsets.h" />

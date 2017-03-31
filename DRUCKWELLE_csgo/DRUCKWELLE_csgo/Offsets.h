@@ -8,11 +8,13 @@ namespace Offsets
 	{
 		const DWORD m_iHealth = 0xFC;
 		const DWORD m_iTeamNum = 0xF0;
-		const DWORD m_vecOrigin = 0x0;
+		const DWORD m_vecOrigin = 0x00000134;
 	}
 
 	namespace Dynamics
 	{
-		const DWORD dwEntityList = 0x0;
+		const DWORD dwEntityList = 0x04AD3A64;
+
+		const DWORD dwGlowObject = 0x04FEE5AC;;
 	}
 }

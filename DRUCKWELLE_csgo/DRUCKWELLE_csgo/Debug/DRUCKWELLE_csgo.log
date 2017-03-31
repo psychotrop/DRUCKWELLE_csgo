@@ -1,6 +1,4 @@
-﻿  Memory.cpp
-  Main.cpp
-  CSGO_SDK.cpp
-  Generating Code...
+﻿  Glow.cpp
+d:\library\c++\druckwelle_csgo\druckwelle_csgo\druckwelle_csgo\glow.cpp(13): warning C4018: '<': signed/unsigned mismatch
   DRUCKWELLE_csgo.vcxproj -> D:\Library\C++\DRUCKWELLE_csgo\DRUCKWELLE_csgo\Debug\DRUCKWELLE_csgo.exe
   DRUCKWELLE_csgo.vcxproj -> D:\Library\C++\DRUCKWELLE_csgo\DRUCKWELLE_csgo\Debug\DRUCKWELLE_csgo.pdb (Partial PDB)

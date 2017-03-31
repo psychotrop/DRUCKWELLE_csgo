@@ -4,7 +4,7 @@
 
 class Memory
 {
-private:
+public:
 	HANDLE m_hProcess;
 	unsigned int m_iProcessID;
 
@@ -29,15 +29,17 @@ public:
 	void findOffsets();
 
 	template <class Type>
-	bool ReadMemory(DWORD dwAddress, Type* pBuffer)
+	Type ReadMemory(DWORD dwAddress)
 	{
-		return ReadProcessMemory(m_hProcess, (void*)dwAddress, pBuffer, sizeof(Type), NULL);
+		Type ret;
+		ReadProcessMemory(m_hProcess, (void*)dwAddress, &ret, sizeof(Type), NULL);
+		return ret;
 	}
 
 	template <class Type>
-	bool WriteMemory(DWORD dwAddress, Type  &pToWrite)
+	bool WriteMemory(DWORD dwAddress, Type  pToWrite)
 	{
-		return WriteProcessMemory(m_hProcess, (void*)dwAddress, pToWrite, sizeof(Type), NULL);
+		return WriteProcessMemory(m_hProcess, (void*)dwAddress, &pToWrite, sizeof(Type), NULL);
 	}
 
 	DWORD getClientDLL();

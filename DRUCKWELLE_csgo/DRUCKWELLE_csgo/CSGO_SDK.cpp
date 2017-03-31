@@ -1,5 +1,5 @@
 #include "CSGO_SDK.h"
-
+/*
 void Player_t::readBase(int iIndex)
 {
 	mem.ReadMemory<DWORD>(mem.getClientDLL() + Offsets::Dynamics::dwEntityList, &m_dwBase);
@@ -18,4 +18,4 @@ void Player_t::readPosition()
 void Player_t::readTeam()
 {
 	mem.ReadMemory<unsigned int>(m_dwBase + Offsets::Netvars::m_iTeamNum, &m_iTeam);
-}
+}*/
